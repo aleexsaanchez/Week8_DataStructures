@@ -1,0 +1,23 @@
+A tree is the perfect structure for managing the hospital's doctor reporting structure
+because it allows to represent hierarchical structures naturally. In a binary tree, each doctor
+(node) can have up to two direct reports (left and right). The root represented the top level doctor
+and each branch represents the hospitals chain of command. By using a binary tree we make sure that 
+we have an efficient traversal structure that allows for hierarchy querrying.
+
+Each traversal methods has different purposes. 
+
+    Preorder traversal can be useful when wanting to process supervisors before
+    subordinates, like if you wanted to create a report top to down or send instructions
+    from higher to lower.
+
+    Inorder traversal when we wanting to process nodes in a balanced way and the tree has sorted
+    data. This method isn't as common but it can be used for visualizing balanced workload.
+
+    Postorder traversal is helpful when we want to take care of subordinates before their supervisors.
+    This could be useful for cleanup tasks.
+
+I think that heaps are useful for real-time systems where urgency determines who goes next, like assigning 
+hospital rooms. By doing this we could ensure that highest priority is always taken care of properly. Also, insertions
+and removals are O(logN) which is really imporant and decisive in high-pressure environments
+such as hospitals. I think that one of the most powerful tools of the heap is the way it automatically 
+adjusts as new patients are added or removed. 
